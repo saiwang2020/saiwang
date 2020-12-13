@@ -1,0 +1,9 @@
+<tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+
+  <block wx:if="{{tabs[0].isActive}}">  <view >暂无参赛记录，快去参加比赛吧！ </view> </block>
+  <block wx:elif="{{tabs[1].isActive}}">  <view >暂无创建比赛记录 </view></block>
+  <block wx:elif="{{tabs[2].isActive}}"><view >暂无待参加比赛的信息 </view></block>
+  <block wx:elif="{{tabs[3].isActive}}"><view >暂无待点评的比赛信息 </view> </block>
+  <block wx:else="{{tabs[4].isActive}}">暂无比赛信息</block>
+
+</tabs>

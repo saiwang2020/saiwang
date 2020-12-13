@@ -1,0 +1,18 @@
+/* pages/校园比赛/index.wxss */page{
+    height:100%
+  }
+  .cates{
+      height:100%;
+     
+  }
+  .cates_container{
+      height:calc(100vh);
+     
+  }
+  .left{
+      flex:2;
+     
+   }
+  .right{
+      flex:5;
+  }

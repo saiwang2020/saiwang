@@ -1,0 +1,51 @@
+/* pages/创建比赛/index.wxss */
+@import "/pages/CreateGames/weui.wxss";
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}
+.size{
+  font-size: 35rpx;
+}
+.small_size{ 
+    width: 50rpx;
+    flex-direction: column;
+    text-align: center;
+}
+.index_cate1{
+  padding-left: 10rpx;
+  padding-top: 30rpx;
+ 
+}
+
+.index_cate2{
+  padding-left: 20rpx;
+  padding-top: 70rpx;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+.textarea-wrp {
+  display: block;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  padding: 0 25rpx;
+  
+}
+.page-body {
+  padding: 20rpx 0;
+}
+.radio-group {
+  border-bottom: 1px solid #ddd;
+}
+.radio {
+  display: block;
+  border-top: 1px solid #ddd;
+  padding: 5px;
+}
+
+

@@ -1,0 +1,66 @@
+{
+  "pages":[
+    "pages/login/index",
+    "pages/index/index",
+    "pages/contest/index",
+    "pages/chat/index",
+    "pages/message/index",
+    "pages/my/index",
+    "pages/test/index",
+    "pages/logs/logs",
+    "pages/search/index",
+    "pages/CreateGames/index",
+    "pages/onlineGame/index",
+    "pages/offlineGame/index",
+    "pages/Game_Online/index",
+    "pages/Game_Active/index",
+    "pages/Game_PopularGame/index",
+    "pages/CampusCompetition/index",
+    "pages/pay/index",
+    "pages/lib/lib"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "赛网",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/contest/index",
+        "text": "赛事",
+        "iconPath": "icons/赛事 (1).png",
+        "selectedIconPath": "icons/赛事.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/首页.png",
+        "selectedIconPath": "icons/首页 (1).png"
+      },
+      {
+        "pagePath": "pages/message/index",
+        "text": "消息",
+        "iconPath": "icons/消息 (1).png",
+        "selectedIconPath": "icons/消息.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "icons/我的.png",
+        "selectedIconPath": "icons/我 的.png"
+      }
+    ]
+  },
+  
+    
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

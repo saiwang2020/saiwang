@@ -1,0 +1,71 @@
+.index_view {
+  display: flex;
+  padding: 10rpx;
+}
+.index_view .index_navigator1 {
+  border-right: solid 1px black;
+  flex: 1;
+  text-align: center;
+}
+.index_view .index_navigator2 {
+  flex: 1;
+  text-align: center;
+}
+.index_tis {
+  display: flex;
+}
+.index_tis .index_tis1 {
+  font-size: 25rpx;
+  color: darkgray;
+  margin-left: 40rpx;
+}
+.index_cate {
+  display: flex;
+  border-bottom: solid 1rpx darkgray;
+}
+.index_cate navigator {
+  padding: 40rpx;
+  flex: 1;
+}
+.index_cate navigator image {
+  width: 100%;
+}
+.index_cate navigator view {
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+.index_all .index_chat {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: solid 2rpx darkgray;
+}
+.index_all .index_chat .photo {
+  padding-left: 10rpx;
+  height: 120rpx;
+  flex: 1;
+}
+.index_all .index_chat .index_text {
+  padding-left: 20rpx;
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.index_all .index_chat .index_text .index_text2 {
+  padding-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.index_all .index_chat .index_text .index_text2 .name {
+  font-size: 35rpx;
+}
+.index_all .index_chat .index_text .index_text2 .time {
+  font-size: 20rpx;
+  color: darkgray;
+}
+.index_all .index_chat .index_text .information {
+  padding-bottom: 10rpx;
+  color: darkgray;
+  font-size: 25rpx;
+}

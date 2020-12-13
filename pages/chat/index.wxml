@@ -1,0 +1,25 @@
+    <view class = "title">
+        小企鹅
+    </view>
+<view class="right">
+    <image class="photo" src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/企鹅.png">
+    </image>
+    <view class='invite'>
+        您吃了吗~
+    </view>
+</view>
+
+<view class="left">
+    <image class="photo" src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/企鹅.png">
+    </image>
+    <view class='invite'>
+        还没呢
+    </view>
+</view>
+
+
+<view class='inputRoom' style='bottom: {{inputBottom}}'>
+  <input bindconfirm='sendClick' adjust-position='{{false}}' value='{{inputVal}}' confirm-type='send' bindfocus='focus' bindblur='blur'></input>
+  <image style='width: 7vw; margin-left: 3.2vw;' 
+  src='https://7768-white-0g207wek9b8dec4f-1304359522.tcb.qcloud.la/%E5%9B%BE%E7%89%87.png?sign=fba3365ba60d52064a3fde182a883e84&t=1606913116' mode='widthFix'></image>
+</view>
