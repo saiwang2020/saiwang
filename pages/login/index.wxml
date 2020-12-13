@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="weui-form">
+		<view class="weui-form__text-area">
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/logo.jpg" mode="cover"></image>
+		</view>
+ 
+		<view class="weui-cells weui-cells_after-title">
+			<radio-group bindchange="radioChange">
+				<label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+					<view class="weui-cell__hd">
+						<radio value="{{item.value}}" />
+					</view>
+					<view class="weui-cell__bd">{{item.name}}</view>
+				</label>
+			</radio-group>
+		</view>
+ 
+		<view class="weui-form__opr-area begin">
+			<button open-type="getUserInfo" bindgetuserinfo='getUserInfo' class="weui-btn submit weui-btn_primary">登录</button>
+		</view>
+	</view>
+</view>

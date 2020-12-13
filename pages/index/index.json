@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search":"../../components/search"
+
+  },
+  "navigationBarTitleText":"赛网"
+}
+   

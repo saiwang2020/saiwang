@@ -1,0 +1,98 @@
+Page{
+  background-color: #f4f4f4;
+}
+.amountBg{
+  height: 250rpx;
+  background:linear-gradient(to top,#1b87a1,#199ce7);
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1rpx black;
+}
+.img{
+  margin-left:40rpx; 
+  margin-top:50rpx;
+}
+.account{
+  color: #ffffff;
+  margin-left: 30rpx;
+  margin-top: 68rpx;
+}
+.name{
+  font-size: 50rpx;
+}
+.manage_text{
+  font-size: 25rpx;
+  color: red;
+  margin-top: 10rpx;
+  border:2rpx solid #9b9b9b;
+  border-radius: 40rpx;
+  text-align: center;
+}
+.set{
+  margin-top: 80rpx;
+  margin-left: 250rpx;
+}
+.set image{
+  width: 46rpx;
+  height: 46rpx;
+}
+.saiwang{
+  font-size: 25rpx;
+}
+.id{
+  font-size: 20rpx;
+}
+.dd{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.index_cate1{
+  display: flex;
+  border-bottom: solid 1rpx darkgray;
+  padding-bottom: 30rpx;
+  padding-top: 30rpx;
+}
+.data1{
+  width: 100%;
+  text-align: center;
+}
+.view1{
+  font-size: 25rpx;
+  width: 100%;
+  text-align: center;
+}
+.navigator1{
+  padding: 20rpx;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  border-right: solid 1rpx gray;
+}
+.x1{
+  padding-top: 30rpx;
+  text-align: center;
+}
+
+.index_cate2{
+  display: flex;
+  padding-right: 50rpx;
+  padding-left: 50rpx;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.data2{
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+.view2{
+  font-size: 25rpx;
+  width: 100%;
+  text-align: center;
+}
+.navigator2{
+  padding: 30rpx;
+  flex: 1;
+  
+}

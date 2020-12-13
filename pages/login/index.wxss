@@ -1,0 +1,23 @@
+
+.userinfo-avatar{
+  
+  
+}
+.weui-form__text-area{
+  display: flex;
+  justify-content: center;
+}
+.weui-cells weui-cells_after-title{
+
+}
+.weui-cell weui-check__label{
+  
+ 
+}
+.weui-cell__hd{
+  
+}
+.weui-btn{
+  color: white;
+  background-color: green;
+}

@@ -1,0 +1,49 @@
+<view class='amountBg'>
+  <view class='img'>
+    <image src="{{avatarUrl}}" style='width:86px;height:86px;'></image>
+  </view>
+  <view class='account'>
+    <view class="name">{{nickName}}</view>
+    <view class='manage_text'>参赛用户</view>
+    <view class="dd">
+      <view class="saiwang">赛网ID:</view>
+      <view class="id">20200518</view>
+    </view>
+   
+  </view>
+  <view class='set'><image src='cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/设 置 (1).png'></image></view>
+</view>
+
+<view class="index_cate1">
+    <navigator class="navigator1"
+        wx:for="{{list1}}"
+        wx:key="id"
+    >
+    <view class="data1">{{item.data}}</view>
+    <view class="view1">{{item.text}}</view>
+    </navigator>
+</view>
+
+<view class="x1">常用功能</view>
+
+<view class="index_cate2">
+    <navigator class="navigator2"
+        wx:for="{{list2}}"
+        wx:key="id"
+    >
+    <image class="data2" mode="widthFix" src="{{item.iconPath}}">
+      </image>
+    <view class="view2">{{item.text}}</view>
+    </navigator>
+</view>
+<view class="index_cate2">
+    <navigator class="navigator2"
+        wx:for="{{list3}}"
+        wx:key="id"
+    >
+    <image class="data2" mode="widthFix" src="{{item.iconPath}}">
+      </image>
+    <view class="view2">{{item.text}}</view>
+    </navigator>
+</view>
+

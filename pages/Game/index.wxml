@@ -1,0 +1,58 @@
+
+<view>
+  <swiper autoplay interval="2000" circular indicator-dots indicator-active-color="#008000">
+  <swiper-item >
+    <image  mode="widthFix" src="https://s3.ax1x.com/2020/12/07/Dx1ojg.jpg"/>    
+  </swiper-item>
+  <swiper-item >
+    <image   mode="widthFix" src="https://s3.ax1x.com/2020/12/07/DxHFcn.jpg"/>    
+  </swiper-item>
+  <swiper-item >
+    <image  mode="widthFix" src="https://s3.ax1x.com/2020/12/07/Dx1IgS.jpg"/>    
+  </swiper-item>
+</swiper>
+</view>
+
+<view class="index_cate1">
+  <scroll-view>
+    
+   <navigator open-type="reLaunch"  url="/pages/Game/index"> <button class="color"> 特别推荐 ></button></navigator>
+    <text class="size">线上比赛</text>
+   <navigator open-type="reLaunch"  url="/pages/Game_Online/index"> <button >网友竞技></button></navigator>
+   <navigator open-type="reLaunch" url="/pages/Game_PopularGame/index"> <button>热门手游></button></navigator>
+    <text class="size">线下比赛</text>
+    <navigator open-type="reLaunch" url="/pages/Game_Active/index"><button>热门活动></button></navigator>
+    
+  </scroll-view>
+  
+  <scroll-view>
+    <view class="index_cate1">
+   <view>
+    <navigator url="{{item.url}}"
+        wx:for="{{list0}}"
+        wx:key="text"
+    >
+    <image class="data2" mode="widthFix" src="{{item.iconPath}}"/>
+    <view class="view2">{{item.text}}</view>
+    </navigator>
+   </view>
+<view>
+  <navigator url="{{item.url}}"
+        wx:for="{{list1}}"
+        wx:key="text"
+    >
+    <image class="data2" mode="widthFix" src="{{item.iconPath}}"/>
+    <view class="view2">{{item.text}}</view>
+    </navigator>
+</view>
+<view>    
+  <navigator url="{{item.url}}"
+        wx:for="{{list2}}"
+        wx:key="text"
+    >
+    <image class="data2" mode="widthFix" src="{{item.iconPath}}"/>
+    <view class="view2">{{item.text}}</view>
+    </navigator></view>
+</view>
+  </scroll-view>
+</view>

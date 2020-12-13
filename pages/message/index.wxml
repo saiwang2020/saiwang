@@ -1,0 +1,41 @@
+<view class="index_view">
+    <navigator class="index_navigator1"  hover-class="navigator-hover" open-type="navigate">
+        消息
+    </navigator>
+    <navigator class="index_navigator2"  hover-class="navigator-hover" open-type="navigate">
+        动态
+    </navigator>    
+</view>
+<view class="index_tis">
+    <view class="index_tis1">
+       没有未读消息       
+    </view>
+</view>
+  
+<view class="index_cate">
+    <navigator 
+        wx:for="{{list}}"
+        wx:key="id"
+    >
+    <image mode="widthFix" src="{{item.iconPath}}">
+      </image>
+    <view>{{item.text}}</view>
+    </navigator>
+</view>
+
+
+<view class="index_all">
+    <navigator class="index_chat" url="/pages/test/index">
+        <image class="photo" 
+        src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/企鹅.png" 
+        mode="aspectFit|aspectFill|widthFix" lazy-load="false"/>     
+        <view class="index_text">
+        <view class="index_text2">
+            <text class="name"> 小企鹅</text>
+            <text class="time"> 16：35</text>
+        </view>
+            <text class="information">哈哈哈哈哈</text>
+        </view>        
+    </navigator>
+</view>
+
