@@ -4,6 +4,9 @@ App({
   //onLaunch,onShow: options(path,query,scene,shareTicket,referrerInfo(appId,extraData))
   globalData:{
     
+
+
+    
   },
   
   onLaunch: function(options) {
