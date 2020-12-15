@@ -16,15 +16,13 @@
 <view class="index_cate1">
   <scroll-view>
     
-   <navigator open-type="reLaunch"  url="/pages/Game/index"> <button class="color"> 特别推荐 ></button></navigator>
-    <text class="size">线上比赛</text>
-   
-   <navigator open-type="reLaunch" url="/pages/Game_PopularGame/index"> <button>热门手游></button></navigator>
-    <text class="size">线下比赛</text>
-    <navigator open-type="reLaunch" url="/pages/Game_Active/index"><button>热门活动></button></navigator>
-    
+   <navigator open-type="reLaunch"  url="/pages/SolicitContributions/index"> <button > 特别推荐 ></button></navigator>
+   <navigator open-type="reLaunch"  url="/pages/sc_nation/index"> <button >国家级></button></navigator>
+   <navigator open-type="reLaunch" url="/pages/sc_province/index"> <button>省级></button></navigator>
+    <navigator open-type="reLaunch" url="/pagessc_citys/index"><button class="color">市级></button></navigator>
+    <navigator open-type="reLaunch" url="/pages/sc_other/index"><button>其他></button></navigator>
   </scroll-view>
-  
+
   <scroll-view>
     <view class="index_cate1">
    <view>
@@ -52,7 +50,8 @@
     >
     <image class="data2" mode="widthFix" src="{{item.iconPath}}"/>
     <view class="view2">{{item.text}}</view>
-    </navigator></view>
+    </navigator>
+  </view>
 </view>
   </scroll-view>
 </view>

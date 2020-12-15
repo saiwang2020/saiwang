@@ -1,7 +1,7 @@
 .search_input{
   height: 75rpx;
   padding: 10rpx;
-  background-color: #4A9681;
+  background-color: #2E8B57;
 }
 .search_input navigator{
    height: 100%;

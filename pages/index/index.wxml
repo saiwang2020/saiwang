@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view>
-  <search> 
-  </search>
+  <searchInput> 
+  </searchInput>
 </view>
 
 <swiper autoplay interval="1000" circular indicator-dots indicator-active-color="#008000">

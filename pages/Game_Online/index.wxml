@@ -15,7 +15,7 @@
   <scroll-view>
    <navigator open-type="reLaunch" url="/pages/Game/index"> <button > 特别推荐 ></button></navigator>
     <text class="size">线上比赛</text>
-   <navigator open-type="reLaunch" url="/pages/Game_Online/index"> <button class="color">网友竞技></button></navigator>
+ 
    <navigator open-type="reLaunch" url="/pages/Game_PopularGame/index"> <button>热门手游></button></navigator>
     <text class="size">线下比赛</text>
     <navigator open-type="reLaunch" url="/pages/Game_Active/index"><button>热门活动></button></navigator>

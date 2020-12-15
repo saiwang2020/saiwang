@@ -7,8 +7,8 @@ Page({
     "list0": [
       {
         id:0,
-        "text": "文字征集",
-        "iconPath": "https://s3.ax1x.com/2020/12/14/rmfHr8.jpg",
+        "text": "作文征集",
+        "iconPath": "https://s3.ax1x.com/2020/12/14/rm4s0O.jpg",
         "url":""
       },
       

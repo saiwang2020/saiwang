@@ -16,12 +16,21 @@
     "pages/Game_Active/index",
     "pages/Game_PopularGame/index",
     "pages/CampusCompetition/index",
+    "pages/school/index",
+    "pages/club/index",
+    "pages/aroundASchool/index",
+    "pages/SolicitContributions/index",
+    "pages/sc_nation/index",
+    "pages/sc_province/index",
+    "pages/sc_citys/index", 
+    "pages/sc_other/index", 
+    "pages/Find/index",
     "pages/pay/index",
     "pages/lib/lib"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#2E8B57",
     "navigationBarTitleText": "赛网",
     "navigationBarTextStyle":"black"
   },

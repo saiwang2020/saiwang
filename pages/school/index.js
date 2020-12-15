@@ -11,8 +11,8 @@ Component({
       },
       {
         id:1,
-        "text":"创新大赛",
-          "iconPath": "https://s3.ax1x.com/2020/12/13/rmJxIJ.png",
+        "text":"英语演讲",
+          "iconPath": "https://s3.ax1x.com/2020/12/13/rmtifs.jpg",
           "url":""
        
       

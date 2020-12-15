@@ -1,8 +1,9 @@
 {
   "usingComponents": {
-    "search":"../../components/search"
+    "searchInput":"../../components/SearchInput/SearchInput"
 
   },
-  "navigationBarTitleText":"赛网"
+  "navigationBarTitleText":"首页"
+  
 }
    

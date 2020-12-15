@@ -1,0 +1,6 @@
+
+      <view class="find">
+        <input class="title" maxlength="50"  auto-focus placeholder="            搜索" placeholder-style="font-size:38rpx"/>
+     
+      </view>
+
