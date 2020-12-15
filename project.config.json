@@ -103,6 +103,11 @@
           "pathName": "pages/SolicitContributions/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "创建比赛",
+          "pathName": "pages/CreateGames/index",
+          "scene": null
         }
       ]
     }

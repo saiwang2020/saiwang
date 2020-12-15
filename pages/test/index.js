@@ -132,6 +132,7 @@ Page({
    * 发送点击监听
    */
   sendClick: function(e) {
+    console.log('输入携带值为', e.detail.value)
     msgList.push({
       speaker: 'customer',
       contentType: 'text',
@@ -159,7 +160,7 @@ Page({
       inputVal
     });
   },
-
+  
   /**
    * 退回上一页
    */

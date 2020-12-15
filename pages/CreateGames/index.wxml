@@ -15,7 +15,7 @@
     <text> 标题(十个字以内哦~)</text>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell weui-cell_input">
-        <input class="weui-input" maxlength="11"  auto-focus placeholder="填写一个吸引人的标题~~" placeholder-style="font-size:38rpx"/>
+        <input bindinput='title' class="weui-input" maxlength="11"  auto-focus placeholder="填写一个吸引人的标题~~" placeholder-style="font-size:38rpx"/>
       </view>
     </view>
   </view >
@@ -25,7 +25,7 @@
     <text> 比赛说明</text>
     <view class="page-section">
       <view class="textarea-wrp">
-        <textarea auto-focus="true" style="height: 10em"  placeholder="需要填写相关的比赛规则和比赛说明哦~~" placeholder-style="font-size:38rpx"/>
+        <textarea bindinput='detail' auto-focus="true" style="height: 10em"  placeholder="需要填写相关的比赛规则和比赛说明哦~~" placeholder-style="font-size:38rpx"/>
       </view>
     </view>
   </view>
@@ -35,9 +35,9 @@
     <text> 比赛地点</text>
     <view>
       <radio-group class="radio-group" bindchange="radioChange">
-                <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+                <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.value}}" checked="{{item.checked}}">
                     <text>{{item.value}}</text>
-                   <input class="weui-input" maxlength="11"  auto-focus placeholder="地点说明~~" placeholder-style="font-size:30rpx"/>
+                   <input bindinput='locationDetail' class="weui-input" maxlength="11"  auto-focus placeholder="地点说明~~" placeholder-style="font-size:30rpx"/>
                 </radio>
             </radio-group>
     </view> 
@@ -47,21 +47,21 @@
   <view class="index_cate1">
     <image class="small_size" mode="widthFix" src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/icon/icon1/比赛开始时间.png"/>
     <text> 比赛时间</text>
-    <input class="weui-input" maxlength="11"  auto-focus placeholder="输入比赛开始的时间吧~" placeholder-style="font-size:30rpx"/>
+    <input bindinput='time' class="weui-input" maxlength="11"  auto-focus placeholder="输入比赛开始的时间吧~" placeholder-style="font-size:30rpx"/>
   </view>
 
   <view class="index_cate1">
     <image class="small_size" mode="widthFix" src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/icon/icon1/总人数.png"/>
     <text> 参赛人数</text>
-    <input class="weui-input" maxlength="11"  auto-focus placeholder="输入本次比赛所需的参数人数吧~" placeholder-style="font-size:30rpx"/>
+    <input bindinput='population' class="weui-input" maxlength="11"  auto-focus placeholder="输入本次比赛所需的参数人数吧~" placeholder-style="font-size:30rpx"/>
   </view>
 
   <view class="index_cate1">
     <image class="small_size" mode="widthFix" src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/icon/icon1/人数设置.png"/>
     <text> 报名方式</text>
     <view>
-      <radio-group  bindchange="radioChange">
-        <radio wx:for-items="{{items1}}" wx:key="name" value="{{item1name}}" checked="{{item1.checked}}">
+      <radio-group  bindchange="radioChange1">
+        <radio wx:for-items="{{items1}}" wx:key="name" value="{{item.value}}" checked="{{item.checked}}">
           <text class="size">{{item.value}}</text>                  
         </radio>
       </radio-group>
@@ -72,14 +72,14 @@
     <image class="small_size" mode="widthFix" src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/icon/icon1/报名费用.png"/>
     <text> 报名费用</text>
     <view>
-      <input class="weui-input" maxlength="11"  auto-focus placeholder="输入本次比赛每人所需的费用吧（免费则填0）~" placeholder-style="font-size:30rpx"/>
+      <input bindinput='cost' class="weui-input" maxlength="11"  auto-focus placeholder="输入本次比赛每人所需的费用吧（免费则填0）~" placeholder-style="font-size:30rpx"/>
     </view>
   </view> 
   <view class="index_cate1">
     <image class="small_size" mode="widthFix" src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/icon/icon1/总奖金额.png"></image>
     <text>奖金总金额</text>
-    <input class="weui-input" maxlength="11"  auto-focus placeholder="输入本次比赛奖金总金额~" placeholder-style="font-size:30rpx"/>
+    <input bindinput='sum' class="weui-input" maxlength="11"  auto-focus placeholder="输入本次比赛奖金总金额~" placeholder-style="font-size:30rpx"/>
   </view>
-<navigator url="../../pages/pay/index"><button >提交</button></navigator>
+<navigator url="../../pages/pay/index" ><button bindtap = "click">提交</button></navigator>
 
 </view > 
