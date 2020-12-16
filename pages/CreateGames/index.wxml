@@ -80,6 +80,6 @@
     <text>奖金总金额</text>
     <input bindinput='sum' class="weui-input" maxlength="11"  auto-focus placeholder="输入本次比赛奖金总金额~" placeholder-style="font-size:30rpx"/>
   </view>
-<navigator url="../../pages/pay/index" ><button bindtap = "click">提交</button></navigator>
+<button bindtap = "click" class="button" plain="true" type="primary">提交</button>
 
 </view > 

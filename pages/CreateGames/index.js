@@ -1,16 +1,17 @@
 const DB = wx.cloud.database().collection("competition")
+const userDB = wx.cloud.database().collection("user")
 Page({
-  classification:"sss",    //比赛分类
-  title:null,   //比赛标题
-  description:null,   //比赛说明
-  location:null,   //比赛地点
-  locationnDetail:null,  //地点说明
-  time:null,   //比赛时间
-  population:null,    //报名人数
-  registerWay:null,    //报名方式
-  cost:null,     //报名费用
-  sum:null,    //奖金总金额
   data: {
+    classification:null,    //比赛分类
+    title:null,   //比赛标题
+    description:null,   //比赛说明
+    location:null,   //比赛地点
+    locationdetail:null,  //地点说明
+    time:null,   //比赛时间
+    population:null,    //报名人数
+    registerWay:null,    //报名方式
+    cost:null,     //报名费用
+    sum:null,    //奖金总金额
     array: ['游戏大赛', '专业大赛', '歌舞大赛','演讲大赛','征稿大赛'],
     objectArray: [
       {
@@ -50,7 +51,7 @@ Page({
         title:null,   //比赛标题
         description:null,   //比赛说明
         location:null,   //比赛地点
-        locationnDetail:null,  //地点说明
+        locationdetail:null,  //地点说明
         time:null,   //比赛时间
         population:null,    //报名人数
         registerWay:null,    //报名方式
@@ -89,7 +90,7 @@ Page({
   },
   locationDetail: function (e) {
     console.log('地点说明',e.detail.value)
-    this.data.competition[0].locationnDetail = e.detail.value
+    this.data.competition[0].locationdetail = e.detail.value
   },
   radioChange1: function (e) {
     console.log('报名方式',e.detail.value)
@@ -121,19 +122,38 @@ Page({
     this.data.competition[0].sum = e.detail.value
   },
   click:function(){
-    DB.add({
-      data:{
-        classification:this.data.competition[0].cost,
-        title:this.data.competition[0].title,
-        description:this.data.competition[0].description,
-        location:this.data.competition[0].location,
-        locationnDetail:this.data.competition[0],locationDetail,
-        time:this.data.competition[0].time,
-        population:this.data.competition[0].population,
-        registerWay:this.data.competition[0].registerWay,
-        cost:this.data.competition[0].cost,
-        sum:this.data.competition[0].sum
-      }
-    })
+    var userInfo = wx.getStorageSync('user');
+    console.log("userInfo",userInfo);
+    if(userInfo.userType == "我是参赛人员"){
+      wx.showToast({
+        title: '您不是主办方,无法创建比赛',
+        icon:'none',
+        duration:2000
+      })
+    }
+    else{
+      DB.add({
+        data:{
+          classification:this.data.array[this.data.competition[0].classification],
+          title:this.competition[0].data.title,
+          description:this.data.competition[0].description,
+          location:this.data.competition[0].location,
+          locationdetail:this.data.competition[0].locationdetail,
+          time:this.data.competition[0].time,
+          population:this.data.competition[0].population,
+          registerWay:this.data.competition[0].registerWay,
+          cost:this.data.competition[0].cost,
+          sum:this.data.competition[0].sum
+        }
+      })
+      wx.switchTab({
+        url: '../../pages/index/index',
+      })
+      wx.showToast({
+        title: '创建比赛成功',
+        icon:'success',
+        duration:2000
+      })
+    }
   }
 })
