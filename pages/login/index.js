@@ -42,6 +42,7 @@ Page({
       data: user
     }).then(res => {
       console.log(res)
+      wx.setStorageSync('user',user.data);
       wx.switchTab({
         url: '../../pages/index/index',
       })

@@ -135,7 +135,7 @@ Page({
       DB.add({
         data:{
           classification:this.data.array[this.data.competition[0].classification],
-          title:this.competition[0].data.title,
+          title:this.data.competition[0].title,
           description:this.data.competition[0].description,
           location:this.data.competition[0].location,
           locationdetail:this.data.competition[0].locationdetail,
