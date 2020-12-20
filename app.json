@@ -26,7 +26,8 @@
     "pages/sc_other/index", 
     "pages/Find/index",
     "pages/pay/index",
-    "pages/lib/lib"
+    "pages/lib/lib",
+    "pages/competition/competition"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -42,7 +43,7 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/contest/index",
+        "pagePath": "pages/competition/competition",
         "text": "赛事",
         "iconPath": "icons/赛事 (1).png",
         "selectedIconPath": "icons/赛事.png"

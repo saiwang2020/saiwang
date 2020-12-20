@@ -1,7 +1,12 @@
 const DB = wx.cloud.database().collection("competition")
 const userDB = wx.cloud.database().collection("user")
+var util = require('../../utils/util.js')
+var dayTime = util.formatTime(new Date());
+const app = getApp()
 Page({
   data: {
+    nickName:null,
+    avatarUrl:null,
     classification:null,    //比赛分类
     title:null,   //比赛标题
     description:null,   //比赛说明
@@ -55,7 +60,7 @@ Page({
         time:null,   //比赛时间
         population:null,    //报名人数
         registerWay:null,    //报名方式
-        cost:null,     //报名费用
+        cost:0,     //报名费用
         sum:null    //奖金总金额
       }
     ],
@@ -67,7 +72,12 @@ Page({
 
 
   onLoad: function(options) {
-    
+    var userInfo = wx.getStorageSync('user');
+    console.log("userInfo",userInfo);
+    this.setData({
+      nickName:userInfo.nickName,
+      avatarUrl:userInfo.avatarUrl
+    })
   },
 
 
@@ -132,8 +142,17 @@ Page({
       })
     }
     else{
+      var dayTime = util.formatTime(new Date());
+      var dayTime1 = dayTime.split(" ")[0].split("/");
+      var dayTime2 = dayTime.split(" ")[1].split(":");
+      var dayTime3 = dayTime1.concat(dayTime2)
+      var dayTime4 = dayTime3.join("");
+      console.log(dayTime4);
       DB.add({
         data:{
+          nickName:this.data.nickName,
+          avatarUrl:this.data.avatarUrl,
+          competitionId:dayTime4,
           classification:this.data.array[this.data.competition[0].classification],
           title:this.data.competition[0].title,
           description:this.data.competition[0].description,

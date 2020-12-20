@@ -138,7 +138,12 @@ Page({
       contentType: 'text',
       content: e.detail.value
     }),
-  
+    /*
+    msgList.push({
+      speaker: '0',
+      contentType: 'text',
+      content: '111'
+    }),*/
     wordDB.add({
       data:{
         sendID:"2001",
