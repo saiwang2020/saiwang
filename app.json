@@ -27,6 +27,7 @@
     "pages/Find/index",
     "pages/pay/index",
     "pages/lib/lib",
+    "pages/attend/index",
     "pages/competition/competition"
   ],
   "window":{

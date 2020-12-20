@@ -39,17 +39,12 @@
 </view>
 
 
-<view>
-  <image mode="widthFix" src="https://s3.ax1x.com/2020/12/07/Dx1ojg.jpg"/>
-</view>
-
 <view wx:for="{{competitionList}}" wx:key="item">
-  <view class="index_cate1">
+  <view class="index_cate1"><item class="label"></item>
  <navigator  url="/pages/attend/index">
   <scroll-view class="background">
-    <text class="text_style">英雄联盟</text>
-    <text class="text_style_n">赛号:</text>
-    <text class="text_style_0">{{item.competitionId}}</text>
+    <text class="text_style">{{item.classification}}</text>
+    <text class="text_style_0">赛号:{{item.competitionId}}</text>
     <image class="image_size" mode="widthFix"
       src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/icon/icon1/总人数.png" />
     <view class="text_style_1">{{item.title}}</view>
@@ -57,24 +52,22 @@
     <text class="text_style_2">{{item.nickName}}</text>
     <image class="image_size1" mode="widthFix"
       src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/icon/icon1/总奖金额.png" />
-      <text class="text_style_2">大赛奖金</text>
+      <text class="text_style_2">总金额</text>
       <text class="text_style_2">{{item.sum}}</text>
     <view class="text_style_2">
       <view class="top">
-        <text>参赛人数：</text>
-        <text class="color">{{item.population}}  </text>
+        <text class="color">剩余名额:{{item.population}}/{{item.population}}</text>
         <image class="image_size1" mode="widthFix" src="https://s3.ax1x.com/2020/12/18/rY8y0H.png" />
         <text wx:if="{{item.cost == 0}}">免费</text>
         <text wx:else="{{item.cost}}">报名费(单人):{{item.cost}}
         </text>
-        <text class="text">查看详情</text>
       </view>
     </view>
   </scroll-view>
 </navigator>
 <navigator  url="/pages/attend/index">
   <scroll-view class="right">
-    <image class="isize" mode="widthFix" src="https://s3.ax1x.com/2020/12/18/rJVi3n.jpg" />
+    <image class="isize" mode="scaleToFill" src="{{item.competitionCover}}" />
   </scroll-view>
 </navigator>
 </view>

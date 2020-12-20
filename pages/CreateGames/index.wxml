@@ -1,3 +1,10 @@
+<!--wxml-->
+<view class='imagesize'>
+  <image class='in-image' bindtap='changeBigImg'  src='{{bigImg}}'></image>
+</view>
+<view class='imageText'>
+  <text >点击图片选择比赛封面</text>
+</view>
 
 <view class="index_cate2"> 
   <view>
@@ -19,7 +26,15 @@
       </view>
     </view>
   </view >
-
+  <view>
+    <image class="small_size" mode="widthFix" src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/游戏.png"/>
+    <text> 比赛标签(填写这个比赛是跟什么相关的哦~)</text>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input bindinput='label' class="weui-input" maxlength="11"  auto-focus placeholder="例:英雄联盟、歌舞" placeholder-style="font-size:30rpx"/>
+      </view>
+    </view>
+  </view >
   <view class="index_cate1">
     <image class="small_size" mode="widthFix" src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/icon/icon1/比赛说明.png"/>
     <text> 比赛说明</text>

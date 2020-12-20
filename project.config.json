@@ -107,6 +107,12 @@
         {
           "name": "创建比赛",
           "pathName": "pages/CreateGames/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "参加比赛",
+          "pathName": "pages/attend/index",
           "scene": null
         }
       ]

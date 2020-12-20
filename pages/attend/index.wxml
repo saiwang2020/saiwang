@@ -1,0 +1,2 @@
+<!--wxml-->
+<image bindtap='changeBigImg'  src='{{bigImg}}'></image>

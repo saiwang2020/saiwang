@@ -58,6 +58,7 @@ image {
 }
 .right{
   flex:2;
+  height: 288rpx;
 }
 
 .image_size {
@@ -103,9 +104,8 @@ image {
 }
 .text_style_2{
   font-size: 30rpx;
-  padding-left: 18rpx;
-  padding-top: 10rpx;
-  padding-bottom: 20rpx;
+  padding-left: 10rpx;
+  padding-bottom: 10rpx;
   color:rgb(80, 21, 21);
 }
 .top{
@@ -117,4 +117,5 @@ image {
 }
 .isize{
   width: 288rpx;
+  
 }
