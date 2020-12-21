@@ -1,1 +1,76 @@
-/* pages/attend/index.wxss */
+
+.imagesize{
+  display:flex;                   
+  justify-content: center;       
+  align-items:center;               
+ }
+ .imagesize{
+   width: 100%;
+   
+ }
+ .top{
+   padding: 30rpx;
+   display: flex;
+ }
+ .saihao{
+   font-size: medium;
+   color: mediumturquoise;
+ }
+ .blackgroud{
+   margin-left: 20rpx;
+   background-color: midnightblue;
+   border-radius: 15rpx;
+ }
+ .label{
+   padding: 3rpx;
+   color: white;
+ }
+ .title{
+   padding-left: 30rpx;
+   font-size: x-large;
+ }
+ .padding{
+   display: flex;
+   flex-direction: column;
+   padding: 20rpx;
+   color: black;
+ }
+.item{
+  padding: 20rpx;
+}
+.item2{
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.icon-zu6408{
+  font-size: large;
+}
+.icon-gengxinrenchuangjianren{
+  
+  font-size: large;
+}
+.icon-wodedangxuan{
+  
+  font-size: large;
+}
+.icon-tuandui{
+  font-size: large;
+}
+.icon-feiyong{
+  font-size: large;
+}
+.icon-shijian{
+  font-size: large;
+}
+.icon-didian{
+  font-size: large;
+}
+.icon-shuoming{
+  font-size: large;
+}
+.shuoming{
+  width: 100%;
+  height: 400rpx;
+  border:3rpx solid gray;
+}

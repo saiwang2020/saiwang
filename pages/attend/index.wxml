@@ -1,2 +1,47 @@
-<!--wxml-->
-<image bindtap='changeBigImg'  src='{{bigImg}}'></image>
+
+<view class='imagesize'>
+  <image class='imagesize'  src='{{competition[0].competitionCover}}'></image>
+</view>
+
+  <view class="top">
+   <text class="saihao">赛号：{{competition[0].competitionId}}</text>
+    <view class="blackgroud">
+      <text class="label">{{competition[0].label}}</text>
+    </view>
+  </view>
+
+
+  <view class="title">
+    <text>{{competition[0].title}}</text>
+  </view>
+
+
+
+
+
+<view class="padding">
+  <view class="item">
+    <text class="iconfont icon-zu6408" style="color: red">大赛奖金：{{competition[0].sum}}元</text>
+  </view>
+  <view class="item2">
+    <text class="iconfont icon-gengxinrenchuangjianren">创建人：{{competition[0].nickName}}</text>
+    <text class="iconfont icon-wodedangxuan">参赛人数：{{competition[0].population}}</text>
+  </view>
+  <view class="item2">
+    <text class="iconfont icon-tuandui">报名类型：{{competition[0].registerWay}}</text>
+    <text class="iconfont icon-feiyong">报名费用：{{competition[0].cost}}</text>
+  </view>
+  <view class="item">
+    <text class="iconfont icon-shijian">比赛时间：{{competition[0].time}}</text>
+  </view>
+  <view class="item">
+    <text class="iconfont icon-didian">比赛地点：{{competition[0].locationdetail}}</text>
+  </view>
+  <view class="item">
+    <text class="iconfont icon-shuoming">比赛说明：</text>
+    <view class="shuoming">
+      <text>{{competition[0].description}}</text>
+    </view>
+  </view>
+</view>
+

@@ -14,8 +14,7 @@
   <swiper-item >
     <image  mode="widthFix" src="https://s3.ax1x.com/2020/12/08/rSOiPf.png"/>    
   </swiper-item>
-</swiper>
-
+</swiper>、
 <!-- 导航 开始 -->
 <view class="index_cate2">
     <navigator class="navigator2" url="{{item.url}}"
@@ -41,7 +40,7 @@
 
 <view wx:for="{{competitionList}}" wx:key="item">
   <view class="index_cate1"><item class="label"></item>
- <navigator  url="/pages/attend/index">
+ <navigator  url="/pages/attend/index?a={{item._id}}">
   <scroll-view class="background">
     <text class="text_style">{{item.classification}}</text>
     <text class="text_style_0">赛号:{{item.competitionId}}</text>
@@ -65,7 +64,7 @@
     </view>
   </scroll-view>
 </navigator>
-<navigator  url="/pages/attend/index">
+<navigator  url="/pages/attend/index?item._id">
   <scroll-view class="right">
     <image class="isize" mode="scaleToFill" src="{{item.competitionCover}}" />
   </scroll-view>

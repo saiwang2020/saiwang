@@ -1,4 +1,5 @@
 @import "./styles/iconfont.wxss";
+@import "./iconFont/iconfont.wxss";
 page,view,text,swiper,swiper_item,image,navigator{
   padding: 0;
   margin:0;
@@ -7,4 +8,13 @@ page,view,text,swiper,swiper_item,image,navigator{
 page{
   --themeColor:#2E8B57;
   font-size: 30rpx;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 2228403 */
+  src: url('//at.alicdn.com/t/font_2228403_5t582ikddzf.eot');
+  src: url('//at.alicdn.com/t/font_2228403_5t582ikddzf.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2228403_5t582ikddzf.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2228403_5t582ikddzf.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2228403_5t582ikddzf.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2228403_5t582ikddzf.svg#iconfont') format('svg');
 }

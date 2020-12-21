@@ -8,6 +8,7 @@ Page({
   
   data: {
     competitionList:[],
+    
     user:[],
     "list1": [
       {
