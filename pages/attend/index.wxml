@@ -45,3 +45,23 @@
   </view>
 </view>
 
+<view class="footer_tool">
+  <button class="bottom1">
+    <text class="iconfont icon-coll-color" style="color: red"></text>
+    <view class="bottom3">赞(999+)</view>
+  </button>
+  <button class="bottom1">
+    <text class="iconfont icon-pinglun" style="color: green"></text>
+    <text class="bottom3">评论(801)</text>
+  </button>
+  <button class="bottom1">
+    <text class="iconfont icon-shoucang" style="color: yellow"></text>
+    <text class="bottom3">收藏</text>
+  </button>
+  <button class="bottom2">
+    <text class="bottom3">邀请</text>
+  </button>
+  <button class="bottom4">
+    <text class="bottom3">我要报名</text>
+  </button>
+</view>

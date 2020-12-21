@@ -1,4 +1,6 @@
-
+page{
+  padding-bottom: 90rpx;
+}
 .imagesize{
   display:flex;                   
   justify-content: center;       
@@ -71,6 +73,49 @@
 }
 .shuoming{
   width: 100%;
-  height: 400rpx;
+  height: 300rpx;
   border:3rpx solid gray;
+}
+.footer_tool{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  border-top:3rpx solid gray;
+}
+.bottom1{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bottom2{
+  background-color: orange;
+  border-radius: 15rpx;
+  flex: 2;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bottom3{
+  width: max-content;
+  font-size: small;
+}
+.bottom4{
+  padding: 10rpx;
+  flex: 3;
+  background-color: palegreen;
+  width: max-content;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
