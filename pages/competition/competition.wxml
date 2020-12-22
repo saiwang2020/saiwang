@@ -1,9 +1,45 @@
 <tabs tabs="{{tabs}}" binditemChange="handleItemChange">
 
-  <block wx:if="{{tabs[0].isActive}}">  <view >暂无参赛记录，快去参加比赛吧！ </view> </block>
+  <block wx:if="{{tabs[0].isActive}}">  <view > </view> </block>
   <block wx:elif="{{tabs[1].isActive}}">  <view >暂无创建比赛记录 </view></block>
   <block wx:elif="{{tabs[2].isActive}}"><view >暂无待参加比赛的信息 </view></block>
   <block wx:elif="{{tabs[3].isActive}}"><view >暂无待点评的比赛信息 </view> </block>
   <block wx:else="{{tabs[4].isActive}}">暂无比赛信息</block>
 
 </tabs>
+
+
+
+<view wx:if="{{tabs[0].isActive}}" wx:for="{{competitionList}}" wx:key="item">
+  <view class="index_cate1"><item class="label"></item>
+ <navigator  url="/pages/attend/index?a={{item._id}}">
+  <scroll-view class="background">
+    <text class="text_style">{{item.classification}}</text>
+    <text class="text_style_0">赛号:{{item.competitionId}}</text>
+    <image class="image_size" mode="widthFix"
+      src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/icon/icon1/总人数.png" />
+    <view class="text_style_1">{{item.title}}</view>
+    <image class="image_size1" mode="widthFix" src="{{item.avatarUrl}}"></image>
+    <text class="text_style_2">{{item.nickName}}</text>
+    <image class="image_size1" mode="widthFix"
+      src="cloud://white-0g207wek9b8dec4f.7768-white-0g207wek9b8dec4f-1304359522/icon/icon1/总奖金额.png" />
+      <text class="text_style_2">总金额</text>
+      <text class="text_style_2">{{item.sum}}</text>
+    <view class="text_style_2">
+      <view class="top">
+        <text class="color">剩余名额:{{item.population}}/{{item.population}}</text>
+        <image class="image_size1" mode="widthFix" src="https://s3.ax1x.com/2020/12/18/rY8y0H.png" />
+        <text wx:if="{{item.cost == 0}}">免费</text>
+        <text wx:else="{{item.cost}}">报名费(单人):{{item.cost}}
+        </text>
+      </view>
+    </view>
+  </scroll-view>
+</navigator>
+<navigator  url="/pages/attend/index?item._id">
+  <scroll-view class="right">
+    <image class="isize" mode="scaleToFill" src="{{item.competitionCover}}" />
+  </scroll-view>
+</navigator>
+</view>
+</view>

@@ -61,7 +61,7 @@
   <button class="bottom2">
     <text class="bottom3">邀请</text>
   </button>
-  <button class="bottom4">
-    <text class="bottom3">我要报名</text>
+  <button class="bottom4" bindtap="register">
+    <text class="bottom3">{{text}}</text>
   </button>
 </view>

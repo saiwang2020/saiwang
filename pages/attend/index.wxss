@@ -95,8 +95,9 @@ page{
   flex-direction: column;
 }
 .bottom2{
+  font-size: small;
   background-color: orange;
-  border-radius: 15rpx;
+  border-radius: 30rpx;
   flex: 2;
   width: max-content;
   display: flex;
@@ -109,8 +110,9 @@ page{
   font-size: small;
 }
 .bottom4{
-  padding: 10rpx;
+  
   flex: 3;
+  border-radius: 30rpx;
   background-color: palegreen;
   width: max-content;
   font-size: small;

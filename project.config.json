@@ -113,6 +113,12 @@
         {
           "name": "参加比赛",
           "pathName": "pages/attend/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "赛事",
+          "pathName": "pages/competition/competition",
           "scene": null
         }
       ]
